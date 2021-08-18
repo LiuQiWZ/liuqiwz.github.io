@@ -4,13 +4,21 @@
   
   
   <entry>
-    <title></title>
+    <title>windows白嫖hexo博客</title>
     <link href="/2021/08/18/windows%E7%99%BD%E5%AB%96hexo%E5%8D%9A%E5%AE%A2/"/>
     <url>/2021/08/18/windows%E7%99%BD%E5%AB%96hexo%E5%8D%9A%E5%AE%A2/</url>
     
     <content type="html"><![CDATA[<h1 id="windows白嫖hexo博客"><a href="#windows白嫖hexo博客" class="headerlink" title="windows白嫖hexo博客"></a>windows白嫖hexo博客</h1><p>因为最近我刚学习搭建了一个hexo博客,虽然现在样式非常单调,但是总算是我的第一个博客系统,所以想做一个总结记录,一方面为了总结自己的经验,另一方面为了给正好有这个想法的小伙伴提供一个教程.</p><p>为了文章的简洁性,话不多说,下面教程走起</p><p>首先要准备环境:</p><p>安装好git,因为git官网下载比较慢,可以使用镜像下载:<a href="https://npm.taobao.org/mirrors/git-for-windows">https://npm.taobao.org/mirrors/git-for-windows</a></p><p>安装好node.js,安装与配置教程可以自行到网上搜索,这里不再说</p><p>之后在cmd命令行中输:</p><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ada">git <span class="hljs-comment">--version</span><br></code></pre></td></tr></table></figure><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crmsh"><span class="hljs-keyword">node</span> <span class="hljs-title">-v</span><br></code></pre></td></tr></table></figure><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript"><span class="hljs-built_in">npm</span> -v<br></code></pre></td></tr></table></figure><p>在这些命令都显示出版本之后表示安装成功</p><p>同样因为npm下载包时很慢,所以我们可以使用cnpm,命令为</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">npm install -g cnpm --registry=https:<span class="hljs-regexp">//</span>registry.npm.taobao.org<br></code></pre></td></tr></table></figure><p>同样在cnpm -v显示版本号之后则为成功</p><p>好,自此环境已经准备完成</p><p>接下来安装hexo</p><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs avrasm">cnpm install -g hexo-<span class="hljs-keyword">cli</span><br></code></pre></td></tr></table></figure><p>同样hexo -v查看即可,是不是很简单啊</p><p>接下来在自己准备放置博客的地方新建文件夹,自己命名</p><p>在新建的文件夹下右键打开Git Bash Here窗口输入</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs csharp">hexo <span class="hljs-keyword">init</span><br></code></pre></td></tr></table></figure><p>命令执行完之后,你的博客已经初步完成,接下来在本地启动</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo s</span><br></code></pre></td></tr></table></figure><p>之后访问本地localhost:4000访问即可</p><p>下面就要部署到github或者码云上面去</p><p>首先在github或者码云上面创建一个代码仓库</p><p>然后回到文件夹下,在命令行输入命令下载推送到远程的插件</p><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ada">cnpm install hexo-deployer-git <span class="hljs-comment">--save</span><br></code></pre></td></tr></table></figure><p>之后修改_config.yml文件,找到下面配置</p><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs dts"><span class="hljs-symbol">deploy:</span><br><span class="hljs-symbol">  type:</span> git<br><span class="hljs-symbol">  repo:</span> 自己的仓库地址<br></code></pre></td></tr></table></figure><p>最后部署到远端完工,之后你的博客地址就是你创建仓库时的名称</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo d</span><br></code></pre></td></tr></table></figure><p>注:部署成功后访问不到的话可能需要开启pages服务,可以自行查找教程,这里不再叙述</p>]]></content>
     
     
+    
+    <tags>
+      
+      <tag>Hexo</tag>
+      
+      <tag>Typora</tag>
+      
+    </tags>
     
   </entry>
   
